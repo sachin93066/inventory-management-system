@@ -1,0 +1,118 @@
+
+.activity-log-section {
+  margin-top: 28px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.activity-log-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.activity-log-header h2 {
+  margin: 0 0 7px;
+  color: #172033;
+  font-size: 22px;
+}
+
+.activity-log-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.activity-refresh-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.activity-refresh-btn:hover {
+  background: #1d4ed8;
+}
+
+.activity-refresh-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.activity-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.activity-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.activity-table th {
+  padding: 13px 14px;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 12px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.activity-table td {
+  padding: 15px 14px;
+  border-bottom: 1px solid #edf0f4;
+  color: #374151;
+  font-size: 13px;
+}
+
+.activity-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.activity-role,
+.activity-action {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 6px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.activity-empty {
+  padding: 30px 16px;
+  color: #6b7280;
+  text-align: center;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.activity-error {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .activity-log-section {
+    padding: 16px;
+  }
+
+  .activity-log-header {
+    align-items: flex-start;
+  }
+}
